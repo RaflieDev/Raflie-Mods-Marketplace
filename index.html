@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JooCloudID Marketplace Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0e0e0e;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header img {
+      width: 70px;
+      border-radius: 10px;
+      border: 2px solid #00ffcc;
+      margin-top: 10px;
+    }
+    header h1 {
+      font-size: 28px;
+      color: #00ffcc;
+      margin-bottom: 5px;
+    }
+    header p {
+      color: #bbb;
+      font-size: 14px;
+    }
+    .play-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 30px;
+      border: 2px solid #00ffcc;
+      border-radius: 8px;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .play-button:hover {
+      background: #00ffcc;
+      color: #0e0e0e;
+    }
+    hr {
+      border: none;
+      height: 2px;
+      background: #00ffcc;
+      margin: 20px auto;
+      width: 90%;
+    }
+    .produk-section {
+      max-width: 600px;
+      margin: auto;
+      padding: 10px 20px;
+    }
+    .produk-section h2 {
+      color: #00ffcc;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .produk {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .produk span {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+    .about-section, .sosmed-section, .contact-section {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 10px 20px;
+    }
+    .about-section h2, .sosmed-section h2, .contact-section h2 {
+      color: #00ffcc;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px 5px 5px 0;
+      background: #1a1a1a;
+      border: 1px solid #00ffcc;
+      border-radius: 8px;
+      font-size: 14px;
+    }     
+    .sosmed-links a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background: #1a1a1a;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .sosmed-links a:hover {
+      background: #00ffcc;
+      color: #0e0e0e;
+    }
+    .contact-links a {
+      display: block;
+      margin: 10px 0;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 30px;
+      background: #25d366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .whatsapp-button:hover {
+      background: #1ebe57;
+    }
+    footer {
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 14px;
+      color: #666;
+    }
+    audio {
+      margin-top: 20px;
+      width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .payment-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  text-align: center;
+}
+.qris-img {
+  width: 250px;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+}
+.payment-codes {
+  margin-top: 20px;
+}
+.payment-code {
+  background: #0e0e0e;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #00ffcc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-code button {
+  background: #00ffcc;
+  color: #0e0e0e;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.payment-code button:hover {
+  background: #00e6b8;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Raflie Hosting Marketplace</h1>
+  <p>Jasa Digital | Panel | Bot | VPS | Nomor Virtual</p>
+  <img src="https://files.catbox.moe/qu90fv.jpg" alt="Logo">
+  <br>
+  <a href="https://files.catbox.moe/bdujgl.mp3" class="play-button">▶ Play Gabutan</a>
+</header>
+
+<section class="produk-section" id="produk">
+  <h2>Spesifikasi Produk</h2>
+
+  <div class="produk">➭ Panel Pterodactyl Unlimited <span>10.000</span></div>
+  <div class="produk">➭ Reseller Panel <span>5.000</span></div>
+  <div class="produk">➭ Admin Panel <span>10.000</span></div>
+  <div class="produk">➭ Owner Panel <span>20.000</span></div>
+  <div class="produk">➭ Partner Panel <span>15.000</span></div>
+  <div class="produk">➭ Nomor Kosong (Nokos) <span>Costum Region</span></div>
+  <div class="produk">➭ Jasa Pembuatan Script Bot <span>Custom</span></div>
+  <div class="produk">➭ Jasa Fix Script <span>Custom</span></div>
+  <div class="produk">➭ Buy Script Modz Crasher <span>50.000</span></div>
+</section>
+
+<section class="payment-section" id="payment">
+  <h2 style="color: #00ffcc; text-align: center;">Metode Pembayaran</h2>
+  <div class="payment-container">
+    <img src="https://files.catbox.moe/2rs9r1.jpg" alt="QRIS Payment" class="qris-img">
+    <p style="text-align: center; margin-top: 10px;">Scan QRIS di atas untuk pembayaran via <b>DANA, OVO, GOPAY</b>.</p>
+    <div class="payment-codes">
+      <div class="payment-code">
+        <img src="https://files.catbox.moe/lxyqcx.jpg" alt="DANA" style="width:30px; height:auto; margin-right:10px;">
+        <b>DANA:</b> <span id="dana-number">085754661077</span> 
+        <button onclick="copyToClipboard('dana-number')">Copy</button>
+      </div>
+      <div class="payment-code">
+        <img src="https://files.catbox.moe/r2bjnh.jpg" alt="OVO" style="width:30px; height:auto; margin-right:10px;">
+        <b>OVO:</b> <span id="ovo-number">Belum Tersedia</span> 
+        <button onclick="copyToClipboard('ovo-number')">Copy</button>
+      </div>
+      <div class="payment-code">
+        <img src="https://files.catbox.moe/e019gk.jpg" alt="GOPAY" style="width:30px; height:auto; margin-right:10px;">
+        <b>GOPAY:</b> <span id="gopay-number">Belum Tersedia!</span> 
+        <button onclick="copyToClipboard('gopay-number')">Copy</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function copyToClipboard(id) {
+    var copyText = document.getElementById(id);
+    var textArea = document.createElement('textarea');
+    textArea.value = copyText.textContent || copyText.innerText;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    alert("Nomor berhasil disalin: " + textArea.value);
+  }
+</script>
+
+<section class="about-section" id="about">
+  <h2>About Me</h2>
+  <p>
+    Halo Saya Ada Lah Raflie Modz Developer Script Bot Whatsapp <b>ModzCrasher</b>, <b>RaflieSpecter</b>.
+    Saya juga menjual berbagai Kebutuhan Hosting Seperti Vps (virtual private server), Panel Pterodactyl Unli,Admin Panel Script Bot Whatsapp Vvip Dll.
+  </p>
+  <div>
+  <span class="badge"><i class="fab fa-html5"></i> HTML</span>
+  <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
+  <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+  <span class="badge"><i class="fas fa-robot"></i> Bot Developer</span>
+  <span class="badge"><i class="fas fa-server"></i> Hosting Seller</span>
+  </div>
+</section>
+
+<section class="sosmed-section" id="sosmed">
+  <h2>Social Media</h2>
+  <div class="sosmed-links">
+  <a href="tiktok.com/@13r_rafz"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+  <a href="https://github.com/RaflieDev"><i class="fa-brands fa-github"></i> GitHub</a>
+  <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+ </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <h2>Contact Person</h2>
+  <div class="contact-links">
+    <a href="https://wa.me/6285123965378" target="_blank">WhatsApp (Chat Langsung)</a>
+    <a href="https://whatsapp.com/channel/0029Vb7J8T05kg79QuzDSF13">Testimoni</a>
+    <a href="https://whatsapp.com/channel/0029VbCaritJkK73qfHPBb3Y">Info & Update</a>
+    <a href="https://raflie-shop.vercel.app/">My Website</a>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="https://wa.me/6285123965378" target="_blank" class="whatsapp-button">My Contact Whatsapp</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Raflie Hosting Solusi Toko Hosting Terbaik.</p>
+</footer>
+
+</body>
+</html>
